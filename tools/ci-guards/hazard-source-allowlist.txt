@@ -1,0 +1,14 @@
+# Reviewed official source names. The hazard-wording guard skips a string only
+# when the entire string equals one of these lines. A longer sentence that
+# merely contains a name is still reported. Do not add our own wording.
+#
+# Planning and Design Code guide (PlanSA), en dash:
+# https://plan.sa.gov.au/__data/assets/pdf_file/0010/799939/Guide_to_the_Planning_and_Design_Code.pdf
+# Spatial layer titles, hyphen, "CURRENT -" names on the SA GeoHub bushfire service.
+
+Hazards (Bushfire – General Risk) Overlay
+Hazards (Bushfire – Medium Risk) Overlay
+Hazards (Bushfire – High Risk) Overlay
+Hazards (Bushfire - General Risk) Overlay
+Hazards (Bushfire - Medium Risk) Overlay
+Hazards (Bushfire - High Risk) Overlay

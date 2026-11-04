@@ -1,0 +1,3 @@
+# The only copy key whose value may contain hazard words. It exists so quoted
+# PlanSA text can be stored under this key. Do not add keys.
+hazard.saEvidenceRequiredNote

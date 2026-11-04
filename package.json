@@ -12,7 +12,8 @@
   },
   "scripts": {
     "dev": "node server/index.mjs",
-    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.e2e.json --noEmit",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit && tsc -p tsconfig.node.json --noEmit && tsc -p tsconfig.e2e.json --noEmit && tsc -p tsconfig.visual.json --noEmit",
+    "test:visual": "node tools/visual/playwright.mjs test -c playwright-ct.config.ts",
     "build": "npm run typecheck && vite build && vite build --ssr src/entry-server.tsx --outDir dist-server && node server/relocate-template.mjs",
     "start": "NODE_ENV=production node server/index.mjs",
     "emulate:vercel": "NODE_ENV=production node server/emulate-vercel.mjs",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/experimental-ct-react": "1.62.1",
     "@playwright/test": "^1.64.1",
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
