@@ -17,4 +17,6 @@ test-results
 blob-report
 *.tsbuildinfo
 .vite
+playwright/.cache
+.playwright-browsers
 *.log

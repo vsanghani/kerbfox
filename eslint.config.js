@@ -15,6 +15,8 @@ export default tseslint.config(
       "test-results/**",
       "src/api/schema.d.ts",
       "contracts/openapi.json",
+      "playwright/.cache/**",
+      "tests/visual/__screenshots__/**",
     ],
   },
   js.configs.recommended,
@@ -31,7 +33,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ["server/**/*.mjs", "api/**/*.js"],
+    files: ["server/**/*.mjs", "api/**/*.js", "tools/**/*.mjs"],
     languageOptions: {
       globals: {
         URL: "readonly",

@@ -10,3 +10,6 @@ src/api/schema.d.ts
 package-lock.json
 backend/.venv
 public/fonts
+playwright/.cache
+tests/visual/__screenshots__
+.playwright-browsers
